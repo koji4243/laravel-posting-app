@@ -19,8 +19,8 @@ class PostFactory extends Factory
     {
         return [
             'user_id' => User::factory(),
-            'title' => $this->faker->sentence,
-            'content' => $this->faker->paragraph
+            'title' => $this->faker->realText(20),
+            'content' => $this->faker->realText(200)
         ];
     }
 }
